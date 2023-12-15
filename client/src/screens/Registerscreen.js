@@ -9,7 +9,7 @@ import {
   MDBCheckbox
 } from 'mdb-react-ui-kit';
 
-import './your-style.css'; // Import your style file with the provided CSS
+import './your-style.css'; 
 
 const Loader = () => <div>Loading...</div>;
 const Error = ({ message }) => <div>{message}</div>;
@@ -28,7 +28,7 @@ function App() {
     if (password === cpassword) {
       const user = { name, email, password };
   
-      // Check if the checkbox is checked
+     
       const agreeToTerms = document.getElementById('flexCheckDefault').checked;
   
       if (!agreeToTerms) {
