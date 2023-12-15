@@ -1,7 +1,7 @@
-// LoginScreen.js
+
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom'; // Change import to useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 import {
   MDBCard,
@@ -9,7 +9,7 @@ import {
   MDBInput,
 } from 'mdb-react-ui-kit';
 
-import './your-style.css'; // Import your style file with the provided CSS
+import './your-style.css';
 
 const Loader = () => <div>Loading...</div>;
 const Error = ({ message }) => <div>{message}</div>;
