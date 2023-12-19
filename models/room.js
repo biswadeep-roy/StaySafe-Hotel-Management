@@ -14,10 +14,6 @@ const roomSchema = mongoose.Schema(
       type: Number,
       required: true,
     },
-    // email:{
-    //     type: email,
-    //     required: true
-    // },
     rentperday: {
       type: Number,
       required: true,
@@ -38,6 +34,6 @@ const roomSchema = mongoose.Schema(
   }
 );
 
-const roomModel = mongoose.model('rooms', roomSchema)
+const roomModel = mongoose.model("rooms", roomSchema);
 
-module.exports = roomModel
+module.exports = roomModel;

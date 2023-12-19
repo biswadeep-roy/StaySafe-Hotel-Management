@@ -18,7 +18,7 @@ router.post("/getroombyid", async (req, res) => {
     if (!room) {
       return res.status(404).json({ message: "Room not found" });
     }
-    res.json(room); // Send all room details
+    res.json(room);
   } catch (error) {
     return res.status(400).json({ message: error.message });
   }

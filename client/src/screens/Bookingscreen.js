@@ -35,10 +35,14 @@ function Bookingscreen() {
       {loading ? (
         <Loader />
       ) : room ? (
-        <div className="row bs"> {/* Updated class for box shadow */}
+        <div className="row bs">
           <div className="col-md-6">
             <h1>{room?.name}</h1>
-            <img src={room.imageurls[0]} className="img-fluid bigimg" alt={room.name} /> {/* Updated class for big image */}
+            <img
+              src={room.imageurls[0]}
+              className="img-fluid bigimg"
+              alt={room.name}
+            />
           </div>
           <div className="col-md-6">
             <div className="text-right">

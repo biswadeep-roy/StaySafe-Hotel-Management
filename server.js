@@ -1,13 +1,13 @@
 const express = require("express");
 const app = express();
 
-const dbConnection = require('./db'); // Import the database connection setup
-const roomsRoute = require('./routes/roomsRoute');
-const usersRoute = require('./routes/usersRoute');
+const dbConnection = require("./db");
+const roomsRoute = require("./routes/roomsRoute");
+const usersRoute = require("./routes/usersRoute");
 
 app.use(express.json());
-app.use('/api/rooms', roomsRoute);
-app.use('/api/users', usersRoute);
+app.use("/api/rooms", roomsRoute);
+app.use("/api/users", usersRoute);
 
 const port = process.env.PORT || 5000;
 

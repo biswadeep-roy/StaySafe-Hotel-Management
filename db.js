@@ -1,17 +1,18 @@
 const mongoose = require("mongoose");
 
-const mongoURL = "mongodb+srv://biswadeeproy1230:Ojaswi12345@cluster0.wvxzefn.mongodb.net/mern-rooms";
+const mongoURL =
+  "Enter Your Mongo URI here";
 
 mongoose.connect(mongoURL, { useUnifiedTopology: true, useNewUrlParser: true });
 
 const connection = mongoose.connection;
 
-connection.on('error', () => {
-    console.log("MongoDB connection failed");
+connection.on("error", () => {
+  console.log("MongoDB connection failed");
 });
 
-connection.on('connected', () => {
-    console.log('MongoDB connected successfully');
+connection.on("connected", () => {
+  console.log("MongoDB connected successfully");
 });
 
-module.exports = connection; // Export the database connection
+module.exports = connection;

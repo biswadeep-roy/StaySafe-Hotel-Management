@@ -30,7 +30,6 @@ function Homescreen() {
   }, []);
 
   const handleDateChange = (dates) => {
-    
     setDateRange(dates);
   };
 
